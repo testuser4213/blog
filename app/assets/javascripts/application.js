@@ -17,6 +17,7 @@
 //= require_tree .
 
 $(function () {
+  $('.ui.sidebar').sidebar('hide');
   $('.sidebar.icon').on('click', function () {
     $('.ui.sidebar').sidebar('toggle');
   });
