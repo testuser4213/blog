@@ -1,2 +1,11 @@
 @import "semantic-ui";
 @import "posts";
+
+.pusher {
+  .sidebar.icon {
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    left: 10px;
+  }
+}
