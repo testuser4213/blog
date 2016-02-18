@@ -1,0 +1,5 @@
+<div class="ui very padded text container segment">
+  <h1 class="ui header"><%= link_to post.title, post, class: "post-title-link" %></h1>
+  <p><%= truncate(post.body, length: 3000) %></p>
+  <%= link_to "Read more", post %>
+</div>

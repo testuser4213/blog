@@ -1,0 +1,7 @@
+<%= form_for [@post, @comment], html: { class: "ui form" } do |f| %>
+  <div class="field">
+    <%= f.label :body %>
+    <%= f.text_area :body, placeholder: "Comment" %>
+  </div>
+  <%= f.submit "Submit", class: "ui button" %>
+<% end %>

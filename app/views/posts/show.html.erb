@@ -1,0 +1,21 @@
+<div class="ui segment text padded container">
+  <%= link_to :back do %>
+    <i class="angle left icon"></i> back
+  <% end %>
+  <h1 class="ui header"><%= @post.title %></h1>
+  <p><%= bb(@post.body) %></p>
+</div>
+
+<div class="ui text container">
+  <h1><%= pluralize(@post.comments.count, "comment") %></h1>
+
+  <div class="ui segments">
+    <%= render @post.comments %>
+  </div>
+</div>
+
+<div class="ui text container segment">
+  <h3 class="ui header">New comment</h3>
+
+  <%= render "comments/new" %>
+</div>
