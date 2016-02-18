@@ -4,7 +4,8 @@
 .pusher {
   .sidebar.icon {
     display: inline-block;
-    position: relative;
+    position: fixed;
+    z-index: 10;
     top: 10px;
     left: 10px;
   }
